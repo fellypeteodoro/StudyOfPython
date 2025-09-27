@@ -139,3 +139,52 @@ print(lista5)
 # OBS: Os elementos a direita desse índice serão deslocados para a esquerda
 lista5.pop(2)
 print(lista5)
+
+print('-----------------------------')
+
+# Podemos remover todos os elementos (zerar a lista)
+
+print(lista5)
+lista5.clear()
+print(lista5)
+
+print('-----------------------------')
+
+# Repetindo elementos em uma lista
+nova = [1, 2, 3]
+print(type(nova))
+nova = nova * 3
+print(nova)
+
+print('-----------------------------')
+
+# Convertendo string para lista
+# Exemplo 1
+pratica = "estudando python"
+print(pratica)
+pratica = pratica.split()
+print(pratica)
+#OBS : Por padrão, o split separa os elementos da lista pelo espaço entre elas
+
+print('-----------------------------')
+
+# Exemplo 2
+pratica2 = 'estudando,python,para,desenvolvimento'
+print(pratica2)
+pratica2 = pratica2.split(',')
+print(pratica2)
+
+print('-----------------------------')
+
+# Transformando uma lista novamente em string
+lista7 = ['Estudando', 'Python', 'para', 'desenvolvimento']
+print(lista7)
+# 'PEGUE A LISTA 7, COLOQUE ESPAÇO ENTRE CADA ELEMENTO E TRANSFORME EM STRING'
+treino = ' '.join(lista7)
+print(treino)
+
+# 'PEGUE A LISTA 7, COLOQUE CIFRÃO ENTRE CADA ELEMENTO E TRANSFORME EM STRING'
+treino1 = '$'.join(lista7)
+print(treino1)
+
+print('-----------------------------')
