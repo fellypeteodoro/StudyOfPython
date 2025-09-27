@@ -188,3 +188,92 @@ treino1 = '$'.join(lista7)
 print(treino1)
 
 print('-----------------------------')
+
+# Lista com elementos variados
+# Podemos colocar qualquer tipo de dado em uma lista misturando tipos de dados
+lista8 = [1, 2, 3.32, True, 'Geek', 'd', [1, 2, 3], 4221]
+print(lista8)
+print(type(lista8))
+
+print('-----------------------------')
+
+# Iterando sobre listas
+# Exemplo 1 - utilizando for
+
+soma = ''
+for elemento in lista2:
+    print(elemento)
+    soma = soma + elemento
+print(soma)
+
+print('-----------------------------')
+
+
+'''
+# Exemplo 2 = utilizando while
+# Fazendo compras
+carrinho = []
+produto = ''
+
+while produto != 'sair':
+    print('Adicione um produto na lista ou digite "sair" para sair')
+    produto = input()
+    if produto != 'sair':
+        carrinho.append(produto)
+
+print('A sua lista de compras foi:') 
+for produto in carrinho:
+    print(produto)
+
+'''
+
+print('-----------------------------')
+
+# Utilizando variáveis em lista
+
+listnum = [1, 2, 3, 4, 5]
+print(listnum)
+
+num1 = 1
+num2 = 2
+num3 = 3
+num4 = 4
+num5 = 5
+
+print('------')
+
+numeros = [num1, num2, num3, num4, num5]
+print(numeros)
+
+# Fazemos acessos aos elementos de forma indexidada
+
+#           0         1         2        3
+cores = ['verde', 'amarelo', 'azul', 'preto']
+print(cores[0]) # VERDE
+print(cores[1]) # AMARELO
+print(cores[2]) # AZUL
+print(cores[3]) # PRETO
+
+print('-----------------------------')
+
+# Acesso aos elementos de forma indexada inversa
+# Para entender melhor o índice negativo, é legal pensar na lista como um círculo!!
+# Onde os "--" (-1,-2,-3) andaria em forma anti horária.
+print(cores[-1]) # PRETO
+print(cores[-2]) # AZUL
+print(cores[-3]) # AMARELO
+print(cores[-4]) # VERDE
+# print(cores[-5]) # ERRO, NÃO EXISTE ÍNDICE -5
+
+print('-----------------------------')
+
+for cor in cores:
+    print(cor)
+
+print('-----------------------------')
+
+indice = 0
+while indice < len(cores):
+    print(cores[indice]) # imprima cores na posição do indice, se eu mudar o indice para 0, a cor verde não aparece
+    indice = indice + 1
+    print(f'indice em {indice}') # Apenas para ver a logica funcionando 
