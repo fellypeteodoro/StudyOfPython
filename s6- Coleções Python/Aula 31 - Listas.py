@@ -277,3 +277,44 @@ while indice < len(cores):
     print(cores[indice]) # imprima cores na posição do indice, se eu mudar o indice para 0, a cor verde não aparece
     indice = indice + 1
     print(f'indice em {indice}') # Apenas para ver a logica funcionando 
+
+print('-----------------------------')
+
+# Gerar indice em um for
+for indice, cor in enumerate(cores):
+    print( indice, cor)
+
+# Acima, quando usamos o 'enumerate', ele faz uma lista como [(0, 'verde'), (1, 'amarelo')]... e assim por diante
+# Ao fazer o 'for indice, cor in enumerate(cores)' e pedir para escrever, ele retorna '1 verde', e assim por diante
+
+print('-----------------------------')
+
+# Listas também aceitam valores repetidos
+lista10 = []
+lista10.append(42)
+lista10.append(42)
+lista10.append(32)
+lista10.append(32)
+lista10.append(42)
+print(lista10)
+
+print('-----------------------------')
+
+# Outros métodos não tão importantes mas também úteis
+# Encontrar o índice de um elemento na lista
+
+produtos = ['ps3', 'ps4', 8, 10, 5, 6, 9, 11, 5]
+
+# Em qual indice está o valor 6
+print(produtos.index(6))
+
+# Em qual indice está o valor 'ps4'
+print(produtos.index('ps4'))
+
+# OBS: Caso não tenha o elemento na lista, será apresentado "error"
+# Exemplo: print(produtos.index('pss4'))
+
+print(produtos.index(5)) # Retorna o indice do 1 elemento encontrado (tendo uma duplicidade)
+
+# Fazendo busca dentro de um range, ou seja, qual indice começar a buscar
+print(produtos.index(5, 5)) #Busce o valor '5' apartir do indice 5
