@@ -385,3 +385,68 @@ print(min(listanova)) # Valor mínimo
 print(len(listanova)) # Tamanho da lista
 
 print('-----------------------------')
+
+# Transformar uma lista em tupla
+ 
+listatupla = [1, 2, 3, 4, 5, 6]
+print(listatupla)
+print(type(listatupla))
+
+tupla = tuple(listatupla)
+print(tupla)
+print(type(tupla))
+
+print('-----------------------------')
+
+# Desenpacotamento de listas
+
+listades = [1, 2, 3]
+# listades = [1, 2, 3, 4] # Daria erro por que a lista esta maior que o número de variáveis
+
+des1, des2, des3 = listades
+# des1, des2, des3, des4 = listades # Daria erro porque o número de variável é maior que a lista
+
+print(des1)
+
+print(des2)
+
+print(des3)
+
+print('-----------------------------')
+
+# Copiando uma lista para outra (Shallow Copy e Deep Copy)
+
+# Forma 1 - Deep Copy
+
+listacopy = [1, 2, 3]
+print(listacopy)
+
+novalista = listacopy.copy() # Copiando
+print(novalista)
+
+novalista.append(4)
+print(listacopy)
+print(novalista)
+
+#                          &&&&&&& DEEP COPY &&&&&&&
+# Copiamos o dado da 'listacopy' para 'novalista' mas elas ficaram totalmente independente
+# Modificando uma lista, não afetará a outra
+
+print('-----------------------------')
+
+# Forma 2 - Shallow Copy
+
+listacopy2 = [1, 2, 3]
+print(listacopy2)
+
+novalista2 = listacopy2 # Copiando
+print(novalista2)
+
+novalista2.append(4)
+
+print(listacopy2)
+print(novalista2)
+
+#                          &&&&&&& SHALLOW COPY &&&&&&&      
+# Não utilizamos o '.copy()', dessa fomas utilizamos a cópia via atribuição
+# Ao modificar a lista nova, a modificação refletiu na antiga, e vice versa
