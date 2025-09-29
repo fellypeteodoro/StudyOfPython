@@ -303,7 +303,7 @@ print('-----------------------------')
 # Outros métodos não tão importantes mas também úteis
 # Encontrar o índice de um elemento na lista
 
-produtos = ['ps3', 'ps4', 8, 10, 5, 6, 9, 11, 5]
+produtos = ['ps3', 'ps4', 5, 6, 8, 5, 7, 11, 5]
 
 # Em qual indice está o valor 6
 print(produtos.index(6))
@@ -318,3 +318,70 @@ print(produtos.index(5)) # Retorna o indice do 1 elemento encontrado (tendo uma 
 
 # Fazendo busca dentro de um range, ou seja, qual indice começar a buscar
 print(produtos.index(5, 5)) #Busce o valor '5' apartir do indice 5
+
+# Podemos fazer busca dentro de um range, inicio/fim
+#print(produtos.index(5, 6, 8)) # Buscar o indice do 
+
+print('-----------------------------')
+
+#Revisão de slicing 
+# lista[inicio:fim:passo]
+# ragen(inicio:fim:passo)
+
+# Trabalhando com slice de lista com o parâmetro 'inicio'
+
+lista = [1, 2, 3, 4]
+print(lista[1:]) #iniciando no indice 1 e pegando todos os elementos restantes
+
+# Trabalhando com slice de lista com o parâmetro 'fim'
+
+print(lista[:2]) # Começa em 0 e vai até o indice 2 -1
+
+print(lista[:4]) # Começa em 0 e vai até o indice 4 -1
+
+print(lista[1:3]) # Começa em 1 e pega até p indice 3 - 1
+
+# Trabalhando com slice de lista com o parâmetro 'passo'
+
+print(lista[1::2]) # Começa no indice 1 e vai até o final de 2 em 2
+
+print(lista[::2]) # Começa no 0, vai até o final de 2 em 2
+
+# Fazendo passo negativo
+print(lista[1::-1])
+
+# Isso funcionaria para outros dados, como string
+# Exemplo:
+
+nome = 'Python para desenvolvimento'
+print(nome[::-1])
+
+print('-----------------------------')
+
+# Invertendo valores em uma lista
+
+nomes = ['Fellype', 'Teodoro']
+
+nomes[0], nomes[1] = nomes[1], nomes[0]
+
+print(nomes)
+
+nomes.reverse()
+print(nomes)
+
+print('-----------------------------')
+
+# Soma*, Valor máximo*, Valor minimo*, Tamanho
+# Se os valores forem inteiros ou reais
+
+listanova = [1, 2, 3, 4, 5, 6]
+
+print(sum(listanova)) # Soma
+
+print(max(listanova)) # Valor máximo
+
+print(min(listanova)) # Valor mínimo
+
+print(len(listanova)) # Tamanho da lista
+
+print('-----------------------------')
